@@ -48,7 +48,21 @@ console.log(x.country);
 console.log(x.array[3]);
 console.log(x.fabMovies.movie1);
 delete x.age;
-console.log(x);
+console.log(x); 
+// Object.freeze(x);
+x.name="Abid";
+console.log(x.name);
 
+// -----------------------------------------------------------
+// undefine  and null
+// -----------------------------------------------------------
+var y;
+
+console.log(y);
+
+var z=null;
+console.log(z);
+console.log(z==y);
+console.log(z===y);
 
          
