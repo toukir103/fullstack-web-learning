@@ -6,105 +6,119 @@
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-[#2c2d34] text-white" >
-<header class="bg-[#2f3136] text-white shadow-lg top-0 w-full">
-    <nav class="container mx-auto p-3 sticky top-0 z-10">
-        <div class="flex flex-col sm:flex-row sm:justify-between ">
-            <!-- Brand Name -->
-            <div class="mb-4 sm:mb-0 flex justify-center">
-                <a href="#" class="text-2xl font-bold hover:text-[#ff4500]">
-                    <span class="text-[#ff5c21]">S</span>mart Cod<span class="text-[#ff5c21]">ers</span>
-                </a>
+<body class="bg-[#2c2d34] text-white">
+
+    <div class="bg-[#2f3136]">
+        <nav class=" container mx-auto p-3 sticky top-0 z-10  shadow-md">
+            <div class="flex flex-col sm:flex-row sm:justify-between items-center">
+                <!-- Brand Name -->
+                <div class="mb-4 sm:mb-0">
+                    <a href="#" class="text-3xl font-extrabold hover:text-[#ff4500]">
+                        <span class="text-[#ff5c21]">S</span>mart Cod<span class="text-[#ff5c21]">ers</span>
+                    </a>
+                </div>
+    
+                <!-- Navigation Links -->
+                <div>
+                    <ul class="flex flex-col sm:flex-row gap-6 items-center">
+                        <li><a href="#" class="hover:text-[#ff5c21] transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-[#ff5c21] transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-[#ff5c21] transition-colors">Services</a></li>
+                        <li><a href="#" class="hover:text-[#ff5c21] transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-[#ff5c21] transition-colors">Blog</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </div>
+    
+    <!-- Hero Section -->
+    <div class="container mx-auto bg-gradient-to-br from-indigo-800 to-gray-900 text-white sm:flex justify-between items-center h-[80vh] px-10 py-10 rounded-lg shadow-xl">
+        <!-- Hero Text -->
+        <div class="text-center items-center sm:text-left max-w-lg space-y-6">
+            <h1 class="text-xl md:text-5xl font-extrabold leading-tight">
+                Unlock Your Coding Potential <br>
+                <span class="text-[#ff5c21]">With Smart Coders</span>
+            </h1>
+            <p class="text-gray-300 text-lg">
+                Join our journey to learn modern programming and build your career with the best resources and tutorials.
+            </p>
+            <button class="bg-[#ff4500] text-white px-8 py-3 rounded-full text-xl font-bold hover:bg-[#ff7521] transition-all shadow-lg flex items-center justify-center space-x-2 
+            md:text-lg sm:text-base sm:px-6 sm:py-2">
+                <span>Get Started</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 animate-bounce sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </button>
             
-            <!-- Navigation Links -->
-            <div class="border-t sm:border-none">
-                <ul class="flex flex-col sm:flex-row gap-6 items-center pt-6">
-                    <li><a href="#" class="hover:text-[#ff5c21]">Home</a></li>
-                    <li><a href="#" class="hover:text-[#ff5c21]">About</a></li>
-                    <li><a href="#" class="hover:text-[#ff5c21]">Services</a></li>
-                    <li><a href="#" class="hover:text-[#ff5c21]">Contact</a></li>
-                    <li><a href="#" class="hover:text-[#ff5c21]">Blog</a></li>
-                </ul>
-            </div>
         </div>
-    </nav>
-</header>
-<div class="container mx-auto border border-indigo-600 border-t-0 sm:flex justify-around items-center text-white h-[80vh] px-10 pt-10">
 
-    <div class="text-center sm:text-left">
-        <h1 class="text-4xl font-bold leading-snug">
-            Smart Coders: Learn <br> Programming
-        </h1>
-        <button class="bg-indigo-900 px-7 py-3 rounded-full text-xl mt-5 hover:bg-indigo-700 transition-all">
-            Join : Programming Shikhbo's <svg class="w-7 inline-block text-red-500 ml-2 animate-pulse" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-              </svg>
-              
-        </button>
-    </div>
-   
-    <div class="mt-8 sm:mt-0">
-        <img class="animate-pulse" src="images/hero-img.png" alt="Hero Image" class="max-w-full h-auto">
-    </div>
-</div>
-
-<main class="container mx-auto">
-    <section class="py-10 my-20 bg-[#2c2d34] text-white">
-        <h2 class="text-3xl font-bold text-center mb-6">Our Services</h2>
-        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
-            <!-- Service Box 1 -->
-            <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="Web Development">
-                <h3 class="text-xl font-bold text-center mb-2">Web Development</h3>
-                <p class="text-gray-300 text-center">
-                    Learn how to build beautiful and responsive websites using modern technologies.
-                </p>
-            </div>
-            <!-- Service Box 2 -->
-            <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="Backend Development">
-                <h3 class="text-xl font-bold text-center mb-2">Backend Development</h3>
-                <p class="text-gray-300 text-center">
-                    Dive into server-side programming and database management to power your applications.
-                </p>
-            </div>
-            <!-- Service Box 3 -->
-            <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="AI and Machine Learning">
-                <h3 class="text-xl font-bold text-center mb-2">AI & Machine Learning</h3>
-                <p class="text-gray-300 text-center">
-                    Explore the fascinating world of Artificial Intelligence and build smart applications.
-                </p>
-            </div>
-            <!-- Service Box 4 -->
-            <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="Frontend Design">
-                <h3 class="text-xl font-bold text-center mb-2">Frontend Design</h3>
-                <p class="text-gray-300 text-center">
-                    Design stunning interfaces with tools like Figma and Adobe XD.
-                </p>
-            </div>
-            <!-- Service Box 5 -->
-            <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="Mobile App Development">
-                <h3 class="text-xl font-bold text-center mb-2">Mobile App Development</h3>
-                <p class="text-gray-300 text-center">
-                    Build efficient and scalable mobile applications for Android and iOS.
-                </p>
-            </div>
-            <!-- Service Box 6 -->
-            <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="Cloud Computing">
-                <h3 class="text-xl font-bold text-center mb-2">Cloud Computing</h3>
-                <p class="text-gray-300 text-center">
-                    Harness the power of cloud platforms like AWS, Azure, and Google Cloud.
-                </p>
-            </div>
+        <!-- Hero Image -->
+        <div class="mt-10 sm:mt-0 w-full sm:w-1/2">
+            <img class="w-full h-auto rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" src="images/hero-img.png" alt="Hero Image">
         </div>
-    </section>
-</main>
+    </div>
 
+    <main class="container mx-auto">
+        <section class="py-10 my-20 bg-[#2c2d34] text-white">
+            <h2 class="text-3xl font-bold text-center mb-6">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
+                <!-- Service Box 1 -->
+                <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="Web Development">
+                    <h3 class="text-xl font-bold text-center mb-2">Web Development</h3>
+                    <p class="text-gray-300 text-center">Learn how to build beautiful and responsive websites using modern technologies.</p>
+                </div>
+                <!-- Service Box 2 -->
+                <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="Backend Development">
+                    <h3 class="text-xl font-bold text-center mb-2">Backend Development</h3>
+                    <p class="text-gray-300 text-center">Dive into server-side programming and database management to power your applications.</p>
+                </div>
+                <!-- Service Box 3 -->
+                <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="AI and Machine Learning">
+                    <h3 class="text-xl font-bold text-center mb-2">AI & Machine Learning</h3>
+                    <p class="text-gray-300 text-center">Explore the fascinating world of Artificial Intelligence and build smart applications.</p>
+                </div>
+                <!-- Service Box 4 -->
+                <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="Frontend Design">
+                    <h3 class="text-xl font-bold text-center mb-2">Frontend Design</h3>
+                    <p class="text-gray-300 text-center">Design stunning interfaces with tools like Figma and Adobe XD.</p>
+                </div>
+                <!-- Service Box 5 -->
+                <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="Mobile App Development">
+                    <h3 class="text-xl font-bold text-center mb-2">Mobile App Development</h3>
+                    <p class="text-gray-300 text-center">Build efficient and scalable mobile applications for Android and iOS.</p>
+                </div>
+                <!-- Service Box 6 -->
+                <div class="box bg-[#1e1f26] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img class="w-1/2 mx-auto mb-4 transform transition-transform duration-300 hover:scale-105" src="images/frontEnd.png" alt="Cloud Computing">
+                    <h3 class="text-xl font-bold text-center mb-2">Cloud Computing</h3>
+                    <p class="text-gray-300 text-center">Harness the power of cloud platforms like AWS, Azure, and Google Cloud.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-100 py-8">
+            <div class="md:flex justify-center items-center gap-8 container mx-auto">
+              <!-- Left Section -->
+              <div class="text-center md:text-left">
+                <h2 class="text-2xl font-bold text-gray-800">My Clients</h2>
+                <h3 class="text-xl font-medium text-gray-600 mt-2">
+                  I take care of more than 500k customers
+                </h3>
+              </div>
+              <!-- Right Section -->
+              <div class="bg-white p-6 rounded shadow-md max-w-md">
+                <h1 class="text-lg font-bold text-gray-800">Griding</h1>
+                
+              </div>
+            </div>
+          </section>
+          
+    </main>
 
 
 </body>
