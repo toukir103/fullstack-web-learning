@@ -245,3 +245,19 @@ console.log("Filtered Array (greater than 25):", filteredArray);
 // Using reduce
 let totalSum = numArray.reduce((acc, num) => acc + num, 0);
 console.log("Total Sum of Array Elements:", totalSum);
+
+// -----------------------------------------------------------
+// rest-operator
+// -----------------------------------------------------------
+
+function addNumbers(...num) {
+    return num;
+}
+
+console.log(addNumbers(100,200,300));
+// -----------------------------------------------------------
+// spread-operator
+// -----------------------------------------------------------
+let arr1=[10,20,30,40,50,];
+let arr2=[...arr1,60,70,80,90,100];
+console.log(arr1, arr2);
