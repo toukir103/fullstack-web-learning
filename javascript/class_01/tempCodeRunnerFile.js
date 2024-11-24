@@ -1,4 +1,4 @@
-// Printing the sum of two numbers
+
 // console.log(10 + 20);
 // console.log("ami programmer");
 // console.log("i am toukir ahmed abid");
@@ -107,5 +107,24 @@
 // console.log(typeof num_1);
 
 
-// // -----------------------------------------------------------
-// // Conversion
+
+const phone=[
+    {id :1 ,Pname:'iphone',price:1000},
+    {id :2 ,Pname:'samsung',price:800},
+    {id :3 ,Pname:'oppo',price:700},
+    {id :4 ,Pname:'vivo',price:900},
+    {id :5 ,Pname:'google pixel',price:1200},
+    {id :6 ,Pname:'onePlus',price:600},
+    {id :7 ,Pname:'realme',price:850}
+
+];
+
+
+const findingPhones=(phones)=>{
+       for( const phone of phones)   {
+        console.log(phone.Pname);
+        
+       }
+}
+
+findingPhones(phone);
