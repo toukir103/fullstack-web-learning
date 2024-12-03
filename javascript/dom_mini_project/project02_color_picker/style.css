@@ -1,0 +1,20 @@
+#container{
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+}
+#colorBox{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: auto;
+}
+#copyBtn{
+    background-color: rgb(65, 170, 65);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#copyBtn:hover{
+    background-color: green;
+}
