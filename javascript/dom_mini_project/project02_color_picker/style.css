@@ -8,6 +8,9 @@
     border: 2px solid black;
     margin: auto;
 }
+#rgbCode{
+   font-size: 20px;
+}
 #copyBtn{
     background-color: rgb(65, 170, 65);
     color: white;
@@ -17,4 +20,11 @@
 }
 #copyBtn:hover{
     background-color: green;
+}
+#changeColor{
+    background-color: rgb(87, 87, 59);
+    color: aliceblue;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
 }
