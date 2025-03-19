@@ -1,0 +1,58 @@
+/* Container for the Left Panel */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title for Left Panel */
+.left-panel h1 {
+  font-weight: 600; /* Increased for a bolder look */
+  font-size: 3rem;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+  letter-spacing: 2px; /* Adds some spacing between letters for a more refined look */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* A more modern font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+/* Filter Section Styling */
+.left-panel .filter-section {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Grid Styling */
+.left-panel .product-grid {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .left-panel {
+    padding: 10px;
+  }
+
+  .left-panel h1 {
+    font-size: 1.5rem;
+  }
+
+  .left-panel .filter-section,
+  .left-panel .product-grid {
+    padding: 10px;
+  }
+}

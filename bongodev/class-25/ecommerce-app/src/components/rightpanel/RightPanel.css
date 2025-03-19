@@ -1,0 +1,37 @@
+.right-panel {
+  background-color: #f8f9fa; /* Light background for the panel */
+  padding: 20px; /* Padding for spacing inside the panel */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 350px; /* Maximum width of the panel */
+  margin-left: 20px; /* Space between panels */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between the heading and button */
+}
+
+.right-panel h1 {
+  font-size: 2rem; /* Slightly smaller than the left panel heading */
+  font-weight: 600;
+  color: #007bff; /* Matching blue color */
+  text-align: center;
+  margin-bottom: 15px; /* Space below the heading */
+  text-transform: capitalize;
+}
+
+.right-panel button {
+  background-color: #28a745; /* Green color for the checkout button */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center; /* Center the button */
+}
+
+.right-panel button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

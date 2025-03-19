@@ -1,0 +1,52 @@
+/* Container for Filter Section */
+.filter-section {
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 98%;
+  max-width: 98%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Added gap to create space between buttons */
+}
+.filter-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+/* Button Styling */
+.filter-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Buttons */
+.filter-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Clear Filters Button Styling */
+.filter-section .clear-filters {
+  background-color: #dc3545;
+}
+
+.filter-section .clear-filters:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .filter-section {
+    padding: 15px;
+    max-width: 280px;
+  }
+}
